@@ -6,6 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/Reflex.svg?style=flat)](https://cocoapods.org/pods/Reflex)
 
 Declarative UI sugar framework built on [FlexLayout](https://github.com/layoutBox/FlexLayout)
+<br/>
+👨‍🔧 Beware, Under construction 🧑‍🔧
 
 <img src="https://github.com/daangn/Reflex/blob/master/res/intro.png" />
 
