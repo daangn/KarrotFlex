@@ -7,6 +7,8 @@
 
 Declarative UI sugar framework built on [FlexLayout](https://github.com/layoutBox/FlexLayout)
 
+<img src="https://github.com/daangn/Reflex/blob/master/res/intro.png" />
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
