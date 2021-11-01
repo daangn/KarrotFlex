@@ -42,6 +42,8 @@ public func FlexItem(_ flex: Flex, view: UIView) -> Flex {
 // MARK: - Overlay
 
 @discardableResult
-public func FlexOverlay(_ flex: Flex, _ overlay: @escaping (Flex) -> Void) -> Flex {
-  return flex.define(overlay)
+public func FlexOverlay(_ flex: Flex, _ overlay: @escaping (Flex) -> Flex) -> Flex {
+  return flex.define {
+    overlay($0).position(.absolute)
+  }
 }
