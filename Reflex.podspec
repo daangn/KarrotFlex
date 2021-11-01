@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author           = { 'Geektree0101' => 'david@daangn.com' }
   s.source           = { :git => 'https://github.com/Geektree0101/Reflex.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Reflex/Classes/**/*'
+  s.source_files = 'Sources/Reflex/**/*'
   s.dependency 'FlexLayout', '~> 1.3'
 end
