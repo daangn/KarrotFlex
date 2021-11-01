@@ -5,7 +5,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - FlexLayout (1.3.22)
-  - KarrotFlex (1.0.0):
+  - KarrotFlex (0.0.1):
     - FlexLayout (~> 1.3)
 
 DEPENDENCIES:
@@ -24,8 +24,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FlexLayout: df96321d364c4c5fd38f85caf90b607f7b1b4f48
-  KarrotFlex: 018a905f018f6c815a9160a05706b9b8656c22a4
+  KarrotFlex: 55cd23de75e494a21ab3512eb183d7abf6fa4fad
 
-PODFILE CHECKSUM: 4bfc9216d93f02a011ebf5c90d50eadca4add846
+PODFILE CHECKSUM: bf8b10d4e2fcb24e00560ec7533eb783e80a1d12
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.1

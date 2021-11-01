@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KarrotFlex'
-  s.version          = '1.0.0'
+  s.version          = '0.0.1'
   s.summary          = 'FlexLayout sugar framework'
   s.description      = 'Declarative UI sugar framework built on FlexLayout'
   s.homepage         = 'https://team.daangn.com/'
