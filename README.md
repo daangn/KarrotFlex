@@ -35,16 +35,32 @@ self.someView.flex.define { flex in
 
 ## Installation
 
-Reflex is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
 
 ```ruby
 pod 'Reflex'
 ```
 
+### Swift Package Manager
+
+In your Package.swift:
+
+```swift
+let package = Package(
+  name: "Example",
+  dependencies: [
+    .package(url: "https://github.com/daangn/Reflex.git", from: "0.0.1")
+  ],
+  targets: [
+    .target(name: "Example", dependencies: ["Reflex"])
+  ]
+)
+```
+
 ## Author
 
-Geektree0101, david@daangn.com
+- Geektree0101, david@daangn.com
+- OhKanghoon, ray@daangn.com
 
 ## License
 
