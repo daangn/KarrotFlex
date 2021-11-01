@@ -1,15 +1,15 @@
-# Reflex
+# KarrotFlex
 
-[![CI Status](https://img.shields.io/travis/Geektree0101/Reflex.svg?style=flat)](https://travis-ci.org/Geektree0101/Reflex)
-[![Version](https://img.shields.io/cocoapods/v/Reflex.svg?style=flat)](https://cocoapods.org/pods/Reflex)
-[![License](https://img.shields.io/cocoapods/l/Reflex.svg?style=flat)](https://cocoapods.org/pods/Reflex)
-[![Platform](https://img.shields.io/cocoapods/p/Reflex.svg?style=flat)](https://cocoapods.org/pods/Reflex)
+[![CI Status](https://img.shields.io/travis/Geektree0101/KarrotFlex.svg?style=flat)](https://travis-ci.org/Geektree0101/KarrotFlex)
+[![Version](https://img.shields.io/cocoapods/v/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
+[![License](https://img.shields.io/cocoapods/l/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
+[![Platform](https://img.shields.io/cocoapods/p/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
 
 Declarative UI sugar framework built on [FlexLayout](https://github.com/layoutBox/FlexLayout)
 <br/>
 👨‍🔧 Beware, Under construction 🧑‍🔧
 
-<img src="https://github.com/daangn/Reflex/blob/master/res/intro.png" />
+<img src="https://github.com/daangn/KarrotFlex/blob/master/res/intro.png" />
 
 ## Example
 
@@ -38,7 +38,7 @@ self.someView.flex.define { flex in
 ### CocoaPods
 
 ```ruby
-pod 'Reflex'
+pod 'KarrotFlex'
 ```
 
 ### Swift Package Manager
@@ -49,10 +49,10 @@ In your Package.swift:
 let package = Package(
   name: "Example",
   dependencies: [
-    .package(url: "https://github.com/daangn/Reflex.git", from: "0.0.1")
+    .package(url: "https://github.com/daangn/KarrotFlex.git", from: "0.0.1")
   ],
   targets: [
-    .target(name: "Example", dependencies: ["Reflex"])
+    .target(name: "Example", dependencies: ["KarrotFlex"])
   ]
 )
 ```
@@ -64,4 +64,4 @@ let package = Package(
 
 ## License
 
-Reflex is available under the MIT license. See the LICENSE file for more info.
+KarrotFlex is available under the MIT license. See the LICENSE file for more info.
