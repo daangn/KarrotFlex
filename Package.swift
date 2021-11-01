@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-  name: "Reflex",
+  name: "KarrotFlex",
   platforms: [
     .iOS(.v9),
   ],
   products: [
     .library(
-      name: "Reflex",
-      targets: ["Reflex"]
+      name: "KarrotFlex",
+      targets: ["KarrotFlex"]
     ),
   ],
   dependencies: [
@@ -22,7 +22,7 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Reflex",
+      name: "KarrotFlex",
       dependencies: [
         .product(name: "FlexLayout", package: "FlexLayout"),
       ],

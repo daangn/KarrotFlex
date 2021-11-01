@@ -1,5 +1,5 @@
 import XCTest
-import Reflex
+import KarrotFlex
 
 class Tests: XCTestCase {
     

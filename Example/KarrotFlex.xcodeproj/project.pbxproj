@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15DC938BEEECF5820A159FA3 /* Pods_Reflex_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44CEDF38C003BCB3B2D8F43 /* Pods_Reflex_Tests.framework */; };
+		15DC938BEEECF5820A159FA3 /* Pods_KarrotFlex_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		D1EA29224B9896237BAE7DCF /* Pods_Reflex_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B2533B5820E9298057444 /* Pods_Reflex_Example.framework */; };
+		D1EA29224B9896237BAE7DCF /* Pods_KarrotFlex_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,29 +23,29 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = Reflex;
+			remoteInfo = KarrotFlex;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5262D69745BEDDDE0F2CCB30 /* Reflex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Reflex.podspec; path = ../Reflex.podspec; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* Reflex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reflex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5262D69745BEDDDE0F2CCB30 /* KarrotFlex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KarrotFlex.podspec; path = ../KarrotFlex.podspec; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* KarrotFlex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarrotFlex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Reflex_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reflex_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* KarrotFlex_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarrotFlex_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		63BA821B5B3E07C6CFD8E29F /* Pods-Reflex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reflex_Tests.release.xcconfig"; path = "Target Support Files/Pods-Reflex_Tests/Pods-Reflex_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78F4073BB1E38CCA9FDEA553 /* Pods-Reflex_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reflex_Example.release.xcconfig"; path = "Target Support Files/Pods-Reflex_Example/Pods-Reflex_Example.release.xcconfig"; sourceTree = "<group>"; };
-		79D56D9964DAC0CE53944BB2 /* Pods-Reflex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reflex_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Reflex_Tests/Pods-Reflex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		63BA821B5B3E07C6CFD8E29F /* Pods-KarrotFlex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Tests.release.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Tests/Pods-KarrotFlex_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		78F4073BB1E38CCA9FDEA553 /* Pods-KarrotFlex_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.release.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.release.xcconfig"; sourceTree = "<group>"; };
+		79D56D9964DAC0CE53944BB2 /* Pods-KarrotFlex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Tests/Pods-KarrotFlex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		871B064693C181B3C90E6A8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A65B2533B5820E9298057444 /* Pods_Reflex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reflex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C44CEDF38C003BCB3B2D8F43 /* Pods_Reflex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reflex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBBEC18237886BF5EA343DA9 /* Pods-Reflex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reflex_Example.debug.xcconfig"; path = "Target Support Files/Pods-Reflex_Example/Pods-Reflex_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EA29224B9896237BAE7DCF /* Pods_Reflex_Example.framework in Frameworks */,
+				D1EA29224B9896237BAE7DCF /* Pods_KarrotFlex_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DC938BEEECF5820A159FA3 /* Pods_Reflex_Tests.framework in Frameworks */,
+				15DC938BEEECF5820A159FA3 /* Pods_KarrotFlex_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +72,10 @@
 		00A8DD00DFEB29A3EE3D91E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EBBEC18237886BF5EA343DA9 /* Pods-Reflex_Example.debug.xcconfig */,
-				78F4073BB1E38CCA9FDEA553 /* Pods-Reflex_Example.release.xcconfig */,
-				79D56D9964DAC0CE53944BB2 /* Pods-Reflex_Tests.debug.xcconfig */,
-				63BA821B5B3E07C6CFD8E29F /* Pods-Reflex_Tests.release.xcconfig */,
+				EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */,
+				78F4073BB1E38CCA9FDEA553 /* Pods-KarrotFlex_Example.release.xcconfig */,
+				79D56D9964DAC0CE53944BB2 /* Pods-KarrotFlex_Tests.debug.xcconfig */,
+				63BA821B5B3E07C6CFD8E29F /* Pods-KarrotFlex_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for Reflex */,
+				607FACD21AFB9204008FA782 /* Example for KarrotFlex */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				00A8DD00DFEB29A3EE3D91E9 /* Pods */,
@@ -95,13 +95,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* Reflex_Example.app */,
-				607FACE51AFB9204008FA782 /* Reflex_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* KarrotFlex_Example.app */,
+				607FACE51AFB9204008FA782 /* KarrotFlex_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for Reflex */ = {
+		607FACD21AFB9204008FA782 /* Example for KarrotFlex */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -111,8 +111,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for Reflex";
-			path = Reflex;
+			name = "Example for KarrotFlex";
+			path = KarrotFlex;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				5262D69745BEDDDE0F2CCB30 /* Reflex.podspec */,
+				5262D69745BEDDDE0F2CCB30 /* KarrotFlex.podspec */,
 				871B064693C181B3C90E6A8D /* README.md */,
 				FFF992CA592387B13D32BB4B /* LICENSE */,
 			);
@@ -153,8 +153,8 @@
 		A0E362A1CFA7B3EF16DC1081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A65B2533B5820E9298057444 /* Pods_Reflex_Example.framework */,
-				C44CEDF38C003BCB3B2D8F43 /* Pods_Reflex_Tests.framework */,
+				A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */,
+				C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* Reflex_Example */ = {
+		607FACCF1AFB9204008FA782 /* KarrotFlex_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Reflex_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KarrotFlex_Example" */;
 			buildPhases = (
 				CD3EA8512A13598B9AE8854C /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = Reflex_Example;
-			productName = Reflex;
-			productReference = 607FACD01AFB9204008FA782 /* Reflex_Example.app */;
+			name = KarrotFlex_Example;
+			productName = KarrotFlex;
+			productReference = 607FACD01AFB9204008FA782 /* KarrotFlex_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* Reflex_Tests */ = {
+		607FACE41AFB9204008FA782 /* KarrotFlex_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Reflex_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KarrotFlex_Tests" */;
 			buildPhases = (
 				49B8635300C85000A80ED9DE /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -196,9 +196,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = Reflex_Tests;
+			name = KarrotFlex_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Reflex_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* KarrotFlex_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Reflex" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "KarrotFlex" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,8 +236,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* Reflex_Example */,
-				607FACE41AFB9204008FA782 /* Reflex_Tests */,
+				607FACCF1AFB9204008FA782 /* KarrotFlex_Example */,
+				607FACE41AFB9204008FA782 /* KarrotFlex_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,18 +269,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Reflex_Example/Pods-Reflex_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/Reflex/Reflex.framework",
+				"${BUILT_PRODUCTS_DIR}/KarrotFlex/KarrotFlex.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KarrotFlex.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reflex_Example/Pods-Reflex_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		49B8635300C85000A80ED9DE /* [CP] Check Pods Manifest.lock */ = {
@@ -298,7 +298,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Reflex_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KarrotFlex_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,7 +320,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Reflex_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KarrotFlex_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,7 +333,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Reflex_Tests/Pods-Reflex_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KarrotFlex_Tests/Pods-KarrotFlex_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -342,7 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reflex_Tests/Pods-Reflex_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarrotFlex_Tests/Pods-KarrotFlex_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Reflex_Example */;
+			target = 607FACCF1AFB9204008FA782 /* KarrotFlex_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -496,10 +496,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBBEC18237886BF5EA343DA9 /* Pods-Reflex_Example.debug.xcconfig */;
+			baseConfigurationReference = EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Reflex/Info.plist;
+				INFOPLIST_FILE = KarrotFlex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,10 +511,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78F4073BB1E38CCA9FDEA553 /* Pods-Reflex_Example.release.xcconfig */;
+			baseConfigurationReference = 78F4073BB1E38CCA9FDEA553 /* Pods-KarrotFlex_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Reflex/Info.plist;
+				INFOPLIST_FILE = KarrotFlex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -526,7 +526,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D56D9964DAC0CE53944BB2 /* Pods-Reflex_Tests.debug.xcconfig */;
+			baseConfigurationReference = 79D56D9964DAC0CE53944BB2 /* Pods-KarrotFlex_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -542,13 +542,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reflex_Example.app/Reflex_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KarrotFlex_Example.app/KarrotFlex_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BA821B5B3E07C6CFD8E29F /* Pods-Reflex_Tests.release.xcconfig */;
+			baseConfigurationReference = 63BA821B5B3E07C6CFD8E29F /* Pods-KarrotFlex_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -560,14 +560,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reflex_Example.app/Reflex_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KarrotFlex_Example.app/KarrotFlex_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Reflex" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "KarrotFlex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Reflex_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KarrotFlex_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Reflex_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KarrotFlex_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

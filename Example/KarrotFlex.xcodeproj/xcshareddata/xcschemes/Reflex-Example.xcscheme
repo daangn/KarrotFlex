@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "Reflex_Example.app"
-               BlueprintName = "Reflex_Example"
-               ReferencedContainer = "container:Reflex.xcodeproj">
+               BuildableName = "KarrotFlex_Example.app"
+               BlueprintName = "KarrotFlex_Example"
+               ReferencedContainer = "container:KarrotFlex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Reflex_Tests.xctest"
-               BlueprintName = "Reflex_Tests"
-               ReferencedContainer = "container:Reflex.xcodeproj">
+               BuildableName = "KarrotFlex_Tests.xctest"
+               BlueprintName = "KarrotFlex_Tests"
+               ReferencedContainer = "container:KarrotFlex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Reflex_Tests.xctest"
-               BlueprintName = "Reflex_Tests"
-               ReferencedContainer = "container:Reflex.xcodeproj">
+               BuildableName = "KarrotFlex_Tests.xctest"
+               BlueprintName = "KarrotFlex_Tests"
+               ReferencedContainer = "container:KarrotFlex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Reflex_Example.app"
-            BlueprintName = "Reflex_Example"
-            ReferencedContainer = "container:Reflex.xcodeproj">
+            BuildableName = "KarrotFlex_Example.app"
+            BlueprintName = "KarrotFlex_Example"
+            ReferencedContainer = "container:KarrotFlex.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Reflex_Example.app"
-            BlueprintName = "Reflex_Example"
-            ReferencedContainer = "container:Reflex.xcodeproj">
+            BuildableName = "KarrotFlex_Example.app"
+            BlueprintName = "KarrotFlex_Example"
+            ReferencedContainer = "container:KarrotFlex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,9 +101,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Reflex_Example.app"
-            BlueprintName = "Reflex_Example"
-            ReferencedContainer = "container:Reflex.xcodeproj">
+            BuildableName = "KarrotFlex_Example.app"
+            BlueprintName = "KarrotFlex_Example"
+            ReferencedContainer = "container:KarrotFlex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

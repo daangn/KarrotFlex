@@ -5,12 +5,12 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - FlexLayout (1.3.22)
-  - Reflex (1.0.0):
+  - KarrotFlex (1.0.0):
     - FlexLayout (~> 1.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
-  - Reflex (from `../`)
+  - KarrotFlex (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -18,13 +18,13 @@ SPEC REPOS:
     - FlexLayout
 
 EXTERNAL SOURCES:
-  Reflex:
+  KarrotFlex:
     :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FlexLayout: df96321d364c4c5fd38f85caf90b607f7b1b4f48
-  Reflex: 018a905f018f6c815a9160a05706b9b8656c22a4
+  KarrotFlex: 018a905f018f6c815a9160a05706b9b8656c22a4
 
 PODFILE CHECKSUM: 4bfc9216d93f02a011ebf5c90d50eadca4add846
 
