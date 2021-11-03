@@ -56,3 +56,9 @@ public func FlexRatio(_ flex: Flex, view: UIView, ratio: CGFloat) -> Flex {
     .addItem(view)
     .aspectRatio(ratio)
 }
+
+@discardableResult
+public func FlexRatio(_ flex: Flex, ratio: CGFloat) -> Flex {
+  return flex
+    .aspectRatio(ratio)
+}
