@@ -47,3 +47,12 @@ public func FlexOverlay(_ flex: Flex, _ overlay: @escaping (Flex) -> Flex) -> Fl
     overlay($0).position(.absolute)
   }
 }
+
+// MARK: - Ratio
+
+@discardableResult
+public func FlexRatio(_ flex: Flex, view: UIView, ratio: CGFloat) -> Flex {
+  return flex
+    .addItem(view)
+    .aspectRatio(ratio)
+}
