@@ -62,3 +62,31 @@ public func FlexRatio(_ flex: Flex, ratio: CGFloat) -> Flex {
   return flex
     .aspectRatio(ratio)
 }
+
+// MARK: - Inset
+
+@discardableResult
+public func FlexInset(_ flex: Flex, view: UIView, insets: UIEdgeInsets) -> Flex {
+  return flex
+    .addItem(view)
+    .padding(insets)
+}
+
+@discardableResult
+public func FlexInset(_ flex: Flex, view: UIView, all: CGFloat) -> Flex {
+  return flex
+    .addItem(view)
+    .padding(all)
+}
+
+@discardableResult
+public func FlexInset(_ flex: Flex, insets: UIEdgeInsets) -> Flex {
+  return flex
+    .padding(insets)
+}
+
+@discardableResult
+public func FlexInset(_ flex: Flex, all: CGFloat) -> Flex {
+  return flex
+    .padding(all)
+}
