@@ -67,28 +67,49 @@ public func FlexRatio(_ flex: Flex, ratio: CGFloat) -> Flex {
 
 @discardableResult
 public func FlexInset(_ flex: Flex, view: UIView, insets: UIEdgeInsets) -> Flex {
-  return flex
-    .addItem(view)
-    .padding(insets)
+  if insets.hasInfinity() {
+    return flex
+      .addItem(view)
+      .top(insets.top)
+      .left(insets.left)
+      .bottom(insets.bottom)
+      .right(insets.right)
+  } else {
+    return flex
+      .addItem(view)
+      .grow(1.0)
+      .margin(insets)
+  }
 }
 
 @discardableResult
 public func FlexInset(_ flex: Flex, view: UIView, all: CGFloat) -> Flex {
   return flex
     .addItem(view)
-    .padding(all)
+    .grow(1.0)
+    .margin(all)
 }
 
 @discardableResult
 public func FlexInset(_ flex: Flex, insets: UIEdgeInsets) -> Flex {
-  return flex
-    .padding(insets)
+  if insets.hasInfinity() {
+    return flex
+      .top(insets.top)
+      .left(insets.left)
+      .bottom(insets.bottom)
+      .right(insets.right)
+  } else {
+    return flex
+      .grow(1.0)
+      .margin(insets)
+  }
 }
 
 @discardableResult
 public func FlexInset(_ flex: Flex, all: CGFloat) -> Flex {
   return flex
-    .padding(all)
+    .grow(1.0)
+    .margin(all)
 }
 
 // MARK: - Center
@@ -168,5 +189,15 @@ public func FlexCenter(_ flex: Flex, option: FlexCenterOption, view: UIView) -> 
       .define {
         $0.addItem(view).alignSelf(.center)
       }
+  }
+}
+
+fileprivate extension UIEdgeInsets {
+
+  func hasInfinity() -> Bool {
+    return self.top == .infinity
+    || self.left == .infinity
+    || self.bottom == .infinity
+    || self.right == .infinity
   }
 }

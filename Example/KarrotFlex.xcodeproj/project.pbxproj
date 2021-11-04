@@ -16,6 +16,7 @@
 		607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */; };
 		D1EA29224B9896237BAE7DCF /* Pods_KarrotFlex_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */; };
 		DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */; };
+		DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE346552733DEF000FCA037 /* FlexInsetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrotFlexSnapshotTestCase.swift; sourceTree = "<group>"; };
+		DAE346552733DEF000FCA037 /* FlexInsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexInsetTests.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */,
+				DAE346552733DEF000FCA037 /* FlexInsetTests.swift */,
 				DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -366,6 +369,7 @@
 			files = (
 				607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */,
 				DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */,
+				DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
