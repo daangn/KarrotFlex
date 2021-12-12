@@ -21,6 +21,9 @@
 		DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7562765D85D003777D8 /* FlexCenterCell.swift */; };
 		DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */; };
 		DA89B7672765DFCD003777D8 /* FlexOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */; };
+		DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */; };
+		DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */; };
+		DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76F2765E5FC003777D8 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		DA89B7562765D85D003777D8 /* FlexCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenterCell.swift; sourceTree = "<group>"; };
 		DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStackTests.swift; sourceTree = "<group>"; };
 		DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexOverlayTests.swift; sourceTree = "<group>"; };
+		DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationCell.swift; sourceTree = "<group>"; };
+		DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationViewController.swift; sourceTree = "<group>"; };
+		DA89B76F2765E5FC003777D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +122,8 @@
 		607FACD21AFB9204008FA782 /* Example for KarrotFlex */ = {
 			isa = PBXGroup;
 			children = (
+				DA89B76E2765E5F7003777D8 /* Base */,
+				DA89B76B2765E5D6003777D8 /* Scene */,
 				DA89B74C2765BB70003777D8 /* Cell */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -180,9 +188,26 @@
 			isa = PBXGroup;
 			children = (
 				DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */,
+				DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */,
 				DA89B7562765D85D003777D8 /* FlexCenterCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		DA89B76B2765E5D6003777D8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		DA89B76E2765E5F7003777D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B76F2765E5FC003777D8 /* BaseViewController.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,9 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */,
+				DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */,
+				DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */,
 				DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
