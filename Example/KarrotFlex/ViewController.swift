@@ -93,12 +93,14 @@ final class Cell: UITableViewCell {
 
   private func defineLayout() {
     self.contentView.flex.define { content in
-      FlexColumn(content) { row in
-        FlexItem(row, view: self.titleLabel)
-        FlexSpacer(row, height: 8.0)
-        FlexItem(row, view: self.descLabel)
-      }
-      .padding(16.0)
+      FlexInset(
+        FlexColumn(content) { row in
+          FlexItem(row, view: self.titleLabel)
+          FlexSpacer(row, height: 8.0)
+          FlexItem(row, view: self.descLabel)
+        },
+        all: 16.0
+      )
     }
   }
 }
