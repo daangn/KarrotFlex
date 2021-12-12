@@ -64,9 +64,11 @@ extension ShowCaseViewController: UITableViewDataSource {
     switch kind {
     case .flexVStackCell:
       let cell: FlexVStackCell = kind.deq(tableView: tableView, for: indexPath)
+      cell.selectionStyle = .none
       return cell
     case .flexCenterCell:
       let cell: FlexCenterCell = kind.deq(tableView: tableView, for: indexPath)
+      cell.selectionStyle = .none
       return cell
     }
   }
@@ -75,6 +77,6 @@ extension ShowCaseViewController: UITableViewDataSource {
 extension ShowCaseViewController: UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    tableView.cellForRow(at: indexPath)?.isSelected = false
+    
   }
 }
