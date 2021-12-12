@@ -52,10 +52,10 @@ final class FlexCenterCell: UITableViewCell {
             FlexItem($0, view: self.daangniImageView).size(80.0)
           }
         }
-        FlexSpacer($0, width: 24.0)
+        FlexSpacer($0, spacing: 24.0)
         FlexVStack($0, justifyContent: .start, alignItems: .start) {
           FlexItem($0, view: self.titleLabel)
-          FlexSpacer($0, height: 8.0)
+          FlexSpacer($0, spacing: 8.0)
           FlexItem($0, view: self.descLabel)
         }.shrink(1.0)
       }.margin(16.0)

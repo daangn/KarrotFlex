@@ -45,9 +45,9 @@ final class FlexVStackCell: UITableViewCell {
     self.contentView.flex.define {
       FlexVStack($0, justifyContent: .start, alignItems: .start) {
         FlexItem($0, view: self.titleLabel)
-        FlexSpacer($0, height: 24.0)
+        FlexSpacer($0, spacing: 24.0)
         FlexItem($0, view: self.descLabel)
-        FlexSpacer($0, height: 12.0)
+        FlexSpacer($0, spacing: 12.0)
         FlexItem($0, view: self.infoLabel)
       }.margin(16.0)
     }

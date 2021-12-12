@@ -2,18 +2,6 @@ import UIKit
 
 import FlexLayout
 
-// MARK: - Spacer
-
-@discardableResult
-public func FlexSpacer(_ flex: Flex, width: CGFloat) -> Flex {
-  return flex.addItem().width(width)
-}
-
-@discardableResult
-public func FlexSpacer(_ flex: Flex, height: CGFloat) -> Flex {
-  return flex.addItem().height(height)
-}
-
 // MARK: - Overlay
 
 @discardableResult
