@@ -27,7 +27,8 @@ public func FlexRow(_ flex: Flex, _ builder: @escaping (Flex) -> Void) -> Flex {
 
 @discardableResult
 public func FlexItem(_ flex: Flex, view: UIView) -> Flex {
-  return flex.addItem(view)
+  flex.addItem(view)
+  return view.flex
 }
 
 // MARK: - Overlay
