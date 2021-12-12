@@ -12,11 +12,14 @@ import KarrotFlex
 
 enum ShowCaseCellKind: Int, CaseIterable {
   case flexVStackCell
+  case flexCenterCell
 
   var cellClass: AnyClass {
     switch self {
     case .flexVStackCell:
       return FlexVStackCell.self
+    case .flexCenterCell:
+      return FlexCenterCell.self
     }
   }
 
@@ -61,6 +64,9 @@ extension ShowCaseViewController: UITableViewDataSource {
     switch kind {
     case .flexVStackCell:
       let cell: FlexVStackCell = kind.deq(tableView: tableView, for: indexPath)
+      return cell
+    case .flexCenterCell:
+      let cell: FlexCenterCell = kind.deq(tableView: tableView, for: indexPath)
       return cell
     }
   }
