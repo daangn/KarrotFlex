@@ -14,15 +14,6 @@ public func FlexSpacer(_ flex: Flex, height: CGFloat) -> Flex {
   return flex.addItem().height(height)
 }
 
-// MARK: - Row
-
-@discardableResult
-public func FlexRow(_ flex: Flex, _ builder: @escaping (Flex) -> Void) -> Flex {
-  return flex.addItem().direction(.row).define {
-    builder($0)
-  }
-}
-
 // MARK: - Overlay
 
 @discardableResult

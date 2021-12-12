@@ -114,7 +114,6 @@
 		607FACD21AFB9204008FA782 /* Example for KarrotFlex */ = {
 			isa = PBXGroup;
 			children = (
-				DA89B74D2765BB79003777D8 /* Animation */,
 				DA89B74C2765BB70003777D8 /* Cell */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -181,13 +180,6 @@
 				DA89B7562765D85D003777D8 /* FlexCenterCell.swift */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		DA89B74D2765BB79003777D8 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
