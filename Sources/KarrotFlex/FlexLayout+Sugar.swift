@@ -23,15 +23,6 @@ public func FlexRow(_ flex: Flex, _ builder: @escaping (Flex) -> Void) -> Flex {
   }
 }
 
-// MARK: - Column
-
-@discardableResult
-public func FlexColumn(_ flex: Flex, _ builder: @escaping (Flex) -> Void) -> Flex {
-  return flex.addItem().direction(.column).define {
-    builder($0)
-  }
-}
-
 // MARK: - Item
 
 @discardableResult

@@ -7,11 +7,31 @@
 //
 
 import UIKit
+
 import KarrotFlex
 
-class ViewController: UIViewController {
+enum ShowCaseCellKind: Int, CaseIterable {
+  case flexVStackCell
 
-  private var ableView: UITableView {
+  var cellClass: AnyClass {
+    switch self {
+    case .flexVStackCell:
+      return FlexVStackCell.self
+    }
+  }
+
+  var identifier: String {
+    return "\(self.rawValue)"
+  }
+
+  func deq<T: UITableViewCell>(tableView: UITableView, for indexPath: IndexPath) -> T {
+    return tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! T
+  }
+}
+
+class ShowCaseViewController: UIViewController {
+
+  private var tableView: UITableView {
     return self.view as! UITableView
   }
 
@@ -19,88 +39,36 @@ class ViewController: UIViewController {
     let tableView = UITableView(frame: .zero)
     tableView.dataSource = self
     tableView.delegate = self
-    tableView.register(Cell.self, forCellReuseIdentifier: Cell.identifier)
+    ShowCaseCellKind.allCases.forEach {
+      tableView.register($0.cellClass, forCellReuseIdentifier: $0.identifier)
+    }
     self.view = tableView
   }
 }
 
 // MARK: - UITableViewDataSource
 
-extension ViewController: UITableViewDataSource {
+extension ShowCaseViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 100
+    return ShowCaseCellKind.allCases.count
   }
 
   func tableView(_ tableView: UITableView,
                  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: Cell.identifier, for: indexPath) as! Cell
-    cell.configure(indexPath: indexPath)
-    return cell
-  }
-}
+    guard let kind = ShowCaseCellKind(rawValue: indexPath.row) else { return UITableViewCell() }
 
-// MARK: - UITableViewDelegate
-
-extension ViewController: UITableViewDelegate {
-
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 80.0
-  }
-}
-
-final class Cell: UITableViewCell {
-
-  static let identifier = "cell"
-
-  private let titleLabel: UILabel = {
-    let label = UILabel()
-    label.font = UIFont.boldSystemFont(ofSize: 24.0)
-    return label
-  }()
-
-  private let descLabel: UILabel = {
-    let label = UILabel()
-    label.font = UIFont.systemFont(ofSize: 16.0)
-    label.textColor = UIColor.darkGray
-    return label
-  }()
-
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    self.defineLayout()
-  }
-
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-
-  override func prepareForReuse() {
-    super.prepareForReuse()
-    self.titleLabel.text = nil
-    self.descLabel.text = nil
-  }
-
-  func configure(indexPath: IndexPath) {
-    self.titleLabel.text = "Title: \(indexPath.row)"
-    self.descLabel.text = "description: section => \(indexPath.section), row => \(indexPath.row)"
-  }
-
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    self.contentView.flex.layout(mode: .adjustHeight)
-  }
-
-  private func defineLayout() {
-    self.contentView.flex.define { content in
-      FlexInset(
-        FlexColumn(content) { row in
-          FlexItem(row, view: self.titleLabel)
-          FlexSpacer(row, height: 8.0)
-          FlexItem(row, view: self.descLabel)
-        },
-        all: 16.0
-      )
+    switch kind {
+    case .flexVStackCell:
+      let cell: FlexVStackCell = kind.deq(tableView: tableView, for: indexPath)
+      return cell
     }
+  }
+}
+
+extension ShowCaseViewController: UITableViewDelegate {
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.cellForRow(at: indexPath)?.isSelected = false
   }
 }

@@ -16,15 +16,15 @@ Declarative UI sugar framework built on [FlexLayout](https://github.com/layoutBo
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ```swift
-self.someView.flex.define { flex in
-  FlexRow(flex) { row in
-    FlexSpacer(row, width: 24.0)
-    FlexColumn(row) { col in
-      FlexItem(col, view: self.titleLabel)
-      FlexSpacer(col, height: 8.0)
-      FlexItem(col, view: self.descLabel)
-      FlexSpacer(col, height: 24.0)
-      FlexItem(col, view: self.infoLabel)
+self.someView.flex.define {
+  FlexRow($0) {
+    FlexSpacer($0, width: 24.0)
+    FlexVStack($0) {
+      FlexItem($0, view: self.titleLabel)
+      FlexSpacer($0, height: 8.0)
+      FlexItem($0, view: self.descLabel)
+      FlexSpacer($0, height: 24.0)
+      FlexItem($0, view: self.infoLabel)
     }
   }
   .padding(16.0)
