@@ -46,7 +46,7 @@ final class FlexCenterCell: UITableViewCell {
 
   private func define() {
     self.contentView.flex.define {
-      $0.addItem().direction(.row).justifyContent(.start).alignItems(.center).define {
+      FlexHStack($0, justifyContent: .start, alignItems: .center) {
         FlexItem($0, view: self.backgroundImageView).size(100.0).define {
           FlexCenter($0, option: .XY) {
             FlexItem($0, view: self.daangniImageView).size(80.0)

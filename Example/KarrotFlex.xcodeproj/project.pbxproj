@@ -19,6 +19,7 @@
 		DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */; };
 		DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */; };
 		DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7562765D85D003777D8 /* FlexCenterCell.swift */; };
+		DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackCell.swift; sourceTree = "<group>"; };
 		DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackTests.swift; sourceTree = "<group>"; };
 		DA89B7562765D85D003777D8 /* FlexCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenterCell.swift; sourceTree = "<group>"; };
+		DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStackTests.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */,
 				DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */,
+				DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */,
 				DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */,
 				DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */,
 				DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */,
