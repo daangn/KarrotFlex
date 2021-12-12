@@ -47,11 +47,12 @@ final class FlexCenterCell: UITableViewCell {
   private func define() {
     self.contentView.flex.define {
       FlexHStack($0, justifyContent: .start, alignItems: .center) {
-        FlexItem($0, view: self.backgroundImageView).size(100.0).define {
-          FlexCenter($0, option: .XY) {
-            FlexItem($0, view: self.daangniImageView).size(80.0)
+        FlexItem($0, view: self.backgroundImageView).size(100.0)
+          .overlay {
+            FlexCenter($0, option: .XY) {
+              FlexItem($0, view: self.daangniImageView).size(80.0)
+            }
           }
-        }
         FlexSpacer($0, spacing: 24.0)
         FlexVStack($0, justifyContent: .start, alignItems: .start) {
           FlexItem($0, view: self.titleLabel)
