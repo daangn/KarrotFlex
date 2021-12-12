@@ -18,7 +18,6 @@
 		DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */; };
 		DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */; };
 		DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */; };
-		DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE346552733DEF000FCA037 /* FlexInsetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrotFlexSnapshotTestCase.swift; sourceTree = "<group>"; };
 		DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackCell.swift; sourceTree = "<group>"; };
 		DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackTests.swift; sourceTree = "<group>"; };
-		DAE346552733DEF000FCA037 /* FlexInsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexInsetTests.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +136,6 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */,
 				DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */,
-				DAE346552733DEF000FCA037 /* FlexInsetTests.swift */,
 				DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -393,7 +390,6 @@
 				607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */,
 				DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */,
 				DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */,
-				DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
