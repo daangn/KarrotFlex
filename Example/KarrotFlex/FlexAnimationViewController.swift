@@ -85,12 +85,17 @@ final class FlexAnimationView: UIView {
         .register(&self.contentStackFlex)
         FlexSpacer($0, spacing: 16.0).grow(1.0)
         FlexItem($0, view: self.animateButton)
-          .margin(16.0)
+          .marginHorizontal(16.0)
           .height(48.0)
       }
       .height(100%)
-      .padding(16.0)
     }
+  }
+
+  override func safeAreaInsetsDidChange() {
+    super.safeAreaInsetsDidChange()
+    self.flex.padding(self.safeAreaInsets)
+    self.setNeedsLayout()
   }
 
   @objc private func didTapAnimateButton() {
