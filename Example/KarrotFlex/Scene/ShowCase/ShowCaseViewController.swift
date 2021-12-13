@@ -10,31 +10,6 @@ import UIKit
 
 import KarrotFlex
 
-enum ShowCaseCellKind: Int, CaseIterable {
-  case flexVStackCell
-  case flexCenterCell
-  case flexAnimationCell
-
-  var cellClass: AnyClass {
-    switch self {
-    case .flexVStackCell:
-      return FlexVStackCell.self
-    case .flexCenterCell:
-      return FlexCenterCell.self
-    case .flexAnimationCell:
-      return FlexAnimationCell.self
-    }
-  }
-
-  var identifier: String {
-    return "\(self.rawValue)"
-  }
-
-  func deq<T: UITableViewCell>(tableView: UITableView, for indexPath: IndexPath) -> T {
-    return tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! T
-  }
-}
-
 class ShowCaseViewController: UIViewController {
 
   private var tableView: UITableView {

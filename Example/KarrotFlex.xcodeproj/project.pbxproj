@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		15DC938BEEECF5820A159FA3 /* Pods_KarrotFlex_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ShowCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -24,6 +24,7 @@
 		DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */; };
 		DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */; };
 		DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76F2765E5FC003777D8 /* BaseViewController.swift */; };
+		DAB1324A276782CA002B9394 /* ShowCaseCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 		607FACD01AFB9204008FA782 /* KarrotFlex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarrotFlex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationCell.swift; sourceTree = "<group>"; };
 		DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationViewController.swift; sourceTree = "<group>"; };
 		DA89B76F2765E5FC003777D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseCellKind.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,11 +124,10 @@
 		607FACD21AFB9204008FA782 /* Example for KarrotFlex */ = {
 			isa = PBXGroup;
 			children = (
-				DA89B76E2765E5F7003777D8 /* Base */,
-				DA89B76B2765E5D6003777D8 /* Scene */,
-				DA89B74C2765BB70003777D8 /* Cell */,
+				DAB132462767829A002B9394 /* Cell */,
+				DAB1324327678289002B9394 /* Scene */,
+				DAB1324227678280002B9394 /* Base */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -184,30 +185,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA89B74C2765BB70003777D8 /* Cell */ = {
+		DAB1324227678280002B9394 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B76F2765E5FC003777D8 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DAB1324327678289002B9394 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DAB13248276782B8002B9394 /* FlexAnimation */,
+				DAB13247276782B3002B9394 /* ShowCase */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DAB132462767829A002B9394 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */,
 				DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */,
 				DA89B7562765D85D003777D8 /* FlexCenterCell.swift */,
 			);
-			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		DA89B76B2765E5D6003777D8 /* Scene */ = {
+		DAB13247276782B3002B9394 /* ShowCase */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */,
+				DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */,
+			);
+			path = ShowCase;
+			sourceTree = "<group>";
+		};
+		DAB13248276782B8002B9394 /* FlexAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */,
 			);
-			name = Scene;
-			sourceTree = "<group>";
-		};
-		DA89B76E2765E5F7003777D8 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				DA89B76F2765E5FC003777D8 /* BaseViewController.swift */,
-			);
-			name = Base;
+			path = FlexAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,8 +424,9 @@
 			files = (
 				DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */,
 				DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ShowCaseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DAB1324A276782CA002B9394 /* ShowCaseCellKind.swift in Sources */,
 				DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */,
 				DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */,
 				DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */,
