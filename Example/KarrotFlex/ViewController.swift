@@ -13,6 +13,7 @@ import KarrotFlex
 enum ShowCaseCellKind: Int, CaseIterable {
   case flexVStackCell
   case flexCenterCell
+  case flexAnimationCell
 
   var cellClass: AnyClass {
     switch self {
@@ -20,6 +21,8 @@ enum ShowCaseCellKind: Int, CaseIterable {
       return FlexVStackCell.self
     case .flexCenterCell:
       return FlexCenterCell.self
+    case .flexAnimationCell:
+      return FlexAnimationCell.self
     }
   }
 
@@ -70,6 +73,10 @@ extension ShowCaseViewController: UITableViewDataSource {
       let cell: FlexCenterCell = kind.deq(tableView: tableView, for: indexPath)
       cell.selectionStyle = .none
       return cell
+    case .flexAnimationCell:
+      let cell: FlexAnimationCell = kind.deq(tableView: tableView, for: indexPath)
+      cell.selectionStyle = .none
+      return cell
     }
   }
 }
@@ -77,6 +84,16 @@ extension ShowCaseViewController: UITableViewDataSource {
 extension ShowCaseViewController: UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+    guard let kind = ShowCaseCellKind(rawValue: indexPath.row) else { return }
+    switch kind {
+    case .flexVStackCell, .flexCenterCell:
+      break
+    case .flexAnimationCell:
+      self.present(
+        FlexAnimationViewController(),
+        animated: true,
+        completion: nil
+      )
+    }
   }
 }
