@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```swift
 self.someView.flex.define {
-  FlexRow($0) {
+  FlexHStack($0) {
     FlexSpacer($0, width: 24.0)
     FlexVStack($0) {
       FlexItem($0, view: self.titleLabel)
