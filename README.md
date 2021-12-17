@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
 [![License](https://img.shields.io/cocoapods/l/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
 [![Platform](https://img.shields.io/cocoapods/p/KarrotFlex.svg?style=flat)](https://cocoapods.org/pods/KarrotFlex)
+[![CI](https://github.com/daangn/KarrotFlex/actions/workflows/ci.yml/badge.svg)](https://github.com/daangn/KarrotFlex/actions/workflows/ci.yml)
 
 Declarative UI sugar framework built on [FlexLayout](https://github.com/layoutBox/FlexLayout)
 <br/>
