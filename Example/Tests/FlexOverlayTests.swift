@@ -30,7 +30,7 @@ final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
 
   override func setUp() {
     super.setUp()
-    self.recordMode = true
+    self.recordMode = false
   }
 
   func test_nested_overlay_from_large_to_small_rect() {
