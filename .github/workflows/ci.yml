@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Run PR-CI
+    runs-on: macOS-latest
+  
+    steps:
+    - name: Checkout the Git repository
+      uses: actions/checkout@v2
+    
+    - name: Install Ruby Dependencies
+      run: |
+        bundle install
+
+    - name: Pod Install
+      run: |
+        bundle exec pod install --project-directory=Example
+
+    - name: Build and Test
+      run: |
+        cd ./Example
+        bundle exec fastlane ios execute_pull_request_ci_test
+        cd ..
+
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
