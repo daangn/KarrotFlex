@@ -8,3 +8,4 @@
 import Foundation
 
 @_exported import FlexLayout
+@_exported import PinLayout
