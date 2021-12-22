@@ -20,7 +20,7 @@ let package = Package(
       .upToNextMajor(from: "1.3.0")
     ),
     .package(
-      url: "https://github.com/layoutBox/FlexLayout",
+      url: "https://github.com/layoutBox/PinLayout",
       .upToNextMajor(from: "1.10.0")
     )
   ],
