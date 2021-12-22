@@ -61,7 +61,7 @@ let package = Package(
 ## Author
 
 - [Geektree0101](https://github.com/Geektree0101), david@daangn.com
-- [OhKanghoon](https://github.com/Ohkanghoon), ray@daangn.com
+- [OhKanghoon](https://github.com/Ohkanghoon), ray@daangnpay.com
 - [leehonghwa](https://github.com/leehonghwa), daniel@daangn.com
 
 ## License
