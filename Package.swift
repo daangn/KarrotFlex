@@ -18,6 +18,10 @@ let package = Package(
     .package(
       url: "https://github.com/layoutBox/FlexLayout",
       .upToNextMajor(from: "1.3.0")
+    ),
+    .package(
+      url: "https://github.com/layoutBox/PinLayout",
+      .upToNextMajor(from: "1.10.0")
     )
   ],
   targets: [
@@ -25,6 +29,7 @@ let package = Package(
       name: "KarrotFlex",
       dependencies: [
         .product(name: "FlexLayout", package: "FlexLayout"),
+        .product(name: "PinLayout", package: "PinLayout"),
       ],
       cSettings: [
         .define("FLEXLAYOUT_SWIFT_PACKAGE")
