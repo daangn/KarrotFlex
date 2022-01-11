@@ -24,7 +24,9 @@
 		DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */; };
 		DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */; };
 		DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76F2765E5FC003777D8 /* BaseViewController.swift */; };
+		DA9391352771EF86005C5F56 /* FlexWrapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9391342771EF86005C5F56 /* FlexWrapCell.swift */; };
 		DAB1324A276782CA002B9394 /* ShowCaseCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */; };
+		DAC1D92F278C2C9C000D3E07 /* FlexWrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,9 @@
 		DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationCell.swift; sourceTree = "<group>"; };
 		DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationViewController.swift; sourceTree = "<group>"; };
 		DA89B76F2765E5FC003777D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DA9391342771EF86005C5F56 /* FlexWrapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrapCell.swift; sourceTree = "<group>"; };
 		DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseCellKind.swift; sourceTree = "<group>"; };
+		DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrapTests.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 				607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */,
 				DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */,
 				DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */,
+				DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */,
 				DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */,
@@ -208,6 +213,7 @@
 				DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */,
 				DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */,
 				DA89B7562765D85D003777D8 /* FlexCenterCell.swift */,
+				DA9391342771EF86005C5F56 /* FlexWrapCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */,
+				DA9391352771EF86005C5F56 /* FlexWrapCell.swift in Sources */,
 				DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ShowCaseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -441,6 +448,7 @@
 			files = (
 				DA89B7672765DFCD003777D8 /* FlexOverlayTests.swift in Sources */,
 				DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */,
+				DAC1D92F278C2C9C000D3E07 /* FlexWrapTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */,
 				DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */,
 				DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */,
