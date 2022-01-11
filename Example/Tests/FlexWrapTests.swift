@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-import Foundation
 import XCTest
 import KarrotFlex
 import FBSnapshotTestCase
