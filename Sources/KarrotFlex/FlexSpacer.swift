@@ -11,5 +11,8 @@ import FlexLayout
 
 @discardableResult
 public func FlexSpacer(_ flex: Flex, spacing: CGFloat) -> Flex {
-  return flex.addItem().width(spacing).height(spacing)
+  let spacerFlex = flex.addItem()
+  // UIView to 'hidden' saves it from being rendered and possibly increases performance
+  spacerFlex.view?.isHidden = true
+  return spacerFlex.width(spacing).height(spacing)
 }
