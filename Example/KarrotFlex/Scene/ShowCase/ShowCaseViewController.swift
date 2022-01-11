@@ -52,6 +52,10 @@ extension ShowCaseViewController: UITableViewDataSource {
       let cell: FlexAnimationCell = kind.deq(tableView: tableView, for: indexPath)
       cell.selectionStyle = .none
       return cell
+    case .flexWrapCell:
+      let cell: FlexWrapCell = kind.deq(tableView: tableView, for: indexPath)
+      cell.selectionStyle = .none
+      return cell
     }
   }
 }
@@ -61,7 +65,7 @@ extension ShowCaseViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     guard let kind = ShowCaseCellKind(rawValue: indexPath.row) else { return }
     switch kind {
-    case .flexVStackCell, .flexCenterCell:
+    case .flexVStackCell, .flexCenterCell, .flexWrapCell:
       break
     case .flexAnimationCell:
       self.present(
