@@ -13,6 +13,7 @@ enum ShowCaseCellKind: Int, CaseIterable {
   case flexVStackCell
   case flexCenterCell
   case flexAnimationCell
+  case flexWrapCell
 
   var cellClass: AnyClass {
     switch self {
@@ -22,6 +23,8 @@ enum ShowCaseCellKind: Int, CaseIterable {
       return FlexCenterCell.self
     case .flexAnimationCell:
       return FlexAnimationCell.self
+    case .flexWrapCell:
+      return FlexWrapCell.self
     }
   }
 
