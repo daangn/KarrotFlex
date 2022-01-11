@@ -17,4 +17,10 @@ extension Flex {
     self.view?.clipsToBounds = true
     return self
   }
+
+  @discardableResult
+  public func nonCilpsToBounds() -> Flex {
+    self.view?.clipsToBounds = false
+    return self
+  }
 }

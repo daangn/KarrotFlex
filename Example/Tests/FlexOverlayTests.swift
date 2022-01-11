@@ -89,4 +89,13 @@ final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
     self.verify()
   }
 
+  func test_non_clip_overlay_test() {
+    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+      FlexItem($0, view: self.yellowBox).size(200).overlay {
+        FlexItem($0, view: self.blueBox).size(200).position(.absolute).left(100).top(100)
+      }.nonCilpsToBounds()
+    }
+    self.verify()
+  }
+
 }
