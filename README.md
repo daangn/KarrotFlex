@@ -50,7 +50,7 @@ In your Package.swift:
 let package = Package(
   name: "Example",
   dependencies: [
-    .package(url: "https://github.com/daangn/KarrotFlex.git", from: "0.0.1")
+    .package(url: "https://github.com/daangn/KarrotFlex.git", from: "1.0.0")
   ],
   targets: [
     .target(name: "Example", dependencies: ["KarrotFlex"])
