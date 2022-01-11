@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://team.daangn.com/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Geektree0101' => 'david@daangn.com' }
-  s.source           = { :git => 'https://github.com/Geektree0101/KarrotFlex.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/daangn/KarrotFlex.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
   s.source_files = 'Sources/KarrotFlex/**/*'
   s.dependency 'FlexLayout', '~> 1.3'
