@@ -10,6 +10,11 @@ final class FlexCenterTests: KarrotFlexSnapshotTestCase {
     return view
   }()
 
+  override func setUp() {
+    super.setUp()
+    self.recordMode = false
+  }
+
   func test_center_XY() {
     self.testDefine(parentSize: CGSize(width: 500, height: 500)) { flex in
       FlexCenter(flex, option: .XY) { center in

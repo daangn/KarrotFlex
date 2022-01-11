@@ -9,14 +9,24 @@
 /* Begin PBXBuildFile section */
 		15DC938BEEECF5820A159FA3 /* Pods_KarrotFlex_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ShowCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */; };
 		D1EA29224B9896237BAE7DCF /* Pods_KarrotFlex_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */; };
 		DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */; };
-		DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE346552733DEF000FCA037 /* FlexInsetTests.swift */; };
+		DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */; };
+		DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */; };
+		DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7562765D85D003777D8 /* FlexCenterCell.swift */; };
+		DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */; };
+		DA89B7672765DFCD003777D8 /* FlexOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */; };
+		DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */; };
+		DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */; };
+		DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76F2765E5FC003777D8 /* BaseViewController.swift */; };
+		DA9391352771EF86005C5F56 /* FlexWrapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9391342771EF86005C5F56 /* FlexWrapCell.swift */; };
+		DAB1324A276782CA002B9394 /* ShowCaseCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */; };
+		DAC1D92F278C2C9C000D3E07 /* FlexWrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +44,7 @@
 		607FACD01AFB9204008FA782 /* KarrotFlex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarrotFlex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -48,7 +58,17 @@
 		A65B2533B5820E9298057444 /* Pods_KarrotFlex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarrotFlex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrotFlexSnapshotTestCase.swift; sourceTree = "<group>"; };
-		DAE346552733DEF000FCA037 /* FlexInsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexInsetTests.swift; sourceTree = "<group>"; };
+		DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackCell.swift; sourceTree = "<group>"; };
+		DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackTests.swift; sourceTree = "<group>"; };
+		DA89B7562765D85D003777D8 /* FlexCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenterCell.swift; sourceTree = "<group>"; };
+		DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStackTests.swift; sourceTree = "<group>"; };
+		DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexOverlayTests.swift; sourceTree = "<group>"; };
+		DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationCell.swift; sourceTree = "<group>"; };
+		DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAnimationViewController.swift; sourceTree = "<group>"; };
+		DA89B76F2765E5FC003777D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DA9391342771EF86005C5F56 /* FlexWrapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrapCell.swift; sourceTree = "<group>"; };
+		DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseCellKind.swift; sourceTree = "<group>"; };
+		DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrapTests.swift; sourceTree = "<group>"; };
 		EBBEC18237886BF5EA343DA9 /* Pods-KarrotFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarrotFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF992CA592387B13D32BB4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +128,10 @@
 		607FACD21AFB9204008FA782 /* Example for KarrotFlex */ = {
 			isa = PBXGroup;
 			children = (
+				DAB132462767829A002B9394 /* Cell */,
+				DAB1324327678289002B9394 /* Scene */,
+				DAB1324227678280002B9394 /* Base */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -131,9 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* FlexCenterTests.swift */,
-				DAE346552733DEF000FCA037 /* FlexInsetTests.swift */,
+				DA89B7522765CFEE003777D8 /* FlexVStackTests.swift */,
+				DA89B75E2765DC45003777D8 /* FlexHStackTests.swift */,
+				DAC1D92E278C2C9C000D3E07 /* FlexWrapTests.swift */,
 				DA33A1E02732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				DA89B7662765DFCD003777D8 /* FlexOverlayTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -163,6 +188,51 @@
 				C44CEDF38C003BCB3B2D8F43 /* Pods_KarrotFlex_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB1324227678280002B9394 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B76F2765E5FC003777D8 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DAB1324327678289002B9394 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DAB13248276782B8002B9394 /* FlexAnimation */,
+				DAB13247276782B3002B9394 /* ShowCase */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DAB132462767829A002B9394 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B74E2765BC06003777D8 /* FlexVStackCell.swift */,
+				DA89B7682765E4FE003777D8 /* FlexAnimationCell.swift */,
+				DA89B7562765D85D003777D8 /* FlexCenterCell.swift */,
+				DA9391342771EF86005C5F56 /* FlexWrapCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DAB13247276782B3002B9394 /* ShowCase */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ShowCaseViewController.swift */,
+				DAB13249276782CA002B9394 /* ShowCaseCellKind.swift */,
+			);
+			path = ShowCase;
+			sourceTree = "<group>";
+		};
+		DAB13248276782B8002B9394 /* FlexAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DA89B76C2765E5DE003777D8 /* FlexAnimationViewController.swift */,
+			);
+			path = FlexAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,11 +348,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-KarrotFlex_Example/Pods-KarrotFlex_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/KarrotFlex/KarrotFlex.framework",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KarrotFlex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,8 +430,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				DA89B7712765E6D6003777D8 /* FlexAnimationViewController.swift in Sources */,
+				DA9391352771EF86005C5F56 /* FlexWrapCell.swift in Sources */,
+				DA89B76A2765E5AE003777D8 /* FlexAnimationCell.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ShowCaseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DAB1324A276782CA002B9394 /* ShowCaseCellKind.swift in Sources */,
+				DA89B74F2765BC06003777D8 /* FlexVStackCell.swift in Sources */,
+				DA89B7722765E6E1003777D8 /* BaseViewController.swift in Sources */,
+				DA89B7572765D85D003777D8 /* FlexCenterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,9 +446,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89B7672765DFCD003777D8 /* FlexOverlayTests.swift in Sources */,
+				DA89B75F2765DC45003777D8 /* FlexHStackTests.swift in Sources */,
+				DAC1D92F278C2C9C000D3E07 /* FlexWrapTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* FlexCenterTests.swift in Sources */,
 				DA33A1E12732D0EB00C5D8BB /* KarrotFlexSnapshotTestCase.swift in Sources */,
-				DAE346562733DEF000FCA037 /* FlexInsetTests.swift in Sources */,
+				DA89B7532765CFEE003777D8 /* FlexVStackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -508,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KarrotFlex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -523,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KarrotFlex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -545,6 +629,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,6 +648,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
