@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "KarrotFlex",
   platforms: [
-    .iOS(.v9),
+    .iOS(.v11),
   ],
   products: [
     .library(
@@ -22,7 +22,11 @@ let package = Package(
     .package(
       url: "https://github.com/layoutBox/PinLayout",
       .upToNextMajor(from: "1.10.0")
-    )
+    ),
+    .package(
+      url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      from: "1.9.0"
+    ),
   ],
   targets: [
     .target(
@@ -32,13 +36,29 @@ let package = Package(
         .product(name: "PinLayout", package: "PinLayout"),
       ],
       cSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE")
+        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ],
       cxxSettings: [
         .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ],
       swiftSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE")
+        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
+      ]
+    ),
+    .testTarget(
+      name: "KarrotFlexTests",
+      dependencies: [
+        "KarrotFlex",
+        .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
+      ],
+      cSettings: [
+        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
+      ],
+      cxxSettings: [
+        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
+      ],
+      swiftSettings: [
+        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ]
     ),
   ]
