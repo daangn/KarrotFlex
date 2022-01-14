@@ -1,8 +1,8 @@
 //
 //  FlexWrap.swift
-//  KarrotFlex
 //
-//  Created by Geektree0101 on 2022/01/10.
+//  Copyright (c) Danggeun Market, Inc.  All rights reserved.
+//  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
 import UIKit

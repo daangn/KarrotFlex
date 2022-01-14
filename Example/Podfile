@@ -4,10 +4,4 @@ platform :ios, '11.0'
 
 target 'KarrotFlex_Example' do
   pod 'KarrotFlex', :path => '../'
-
-  target 'KarrotFlex_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-  end
 end
