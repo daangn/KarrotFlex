@@ -1,17 +1,18 @@
 //
-//  FlexOverlayTests.swift
-//  KarrotFlex_Tests
+//  FlexVStackTests.swift
 //
-//  Created by Geektree0101 on 2021/12/12.
-//  Copyright © 2021 CocoaPods. All rights reserved.
+//  Copyright (c) Danggeun Market, Inc.  All rights reserved.
+//  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
 import Foundation
 import XCTest
-import KarrotFlex
-import FBSnapshotTestCase
 
-final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
+import SnapshotTesting
+
+import KarrotFlex
+
+final class FlexOverlayTests: XCTestCase {
 
   private let redBox: UIView = {
     $0.backgroundColor = .red
@@ -30,22 +31,24 @@ final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
 
   override func setUp() {
     super.setUp()
-    self.recordMode = false
+
+    isRecording = false
   }
 
   func test_nested_overlay_from_large_to_small_rect() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) {
       FlexItem($0, view: self.redBox).size(400).overlay {
         FlexItem($0, view: self.blueBox).size(200).overlay {
           FlexItem($0, view: self.yellowBox).size(50)
         }
       }
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_nested_centering_overlay_from_large_to_small_rect() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) {
       FlexCenter($0, option: .XY) {
         FlexItem($0, view: self.redBox).size(400).overlay {
           FlexCenter($0, option: .XY) {
@@ -58,22 +61,24 @@ final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
         }
       }
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_nested_overlay_from_small_to_large_rect() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) {
       FlexItem($0, view: self.yellowBox).size(50).overlay {
         FlexItem($0, view: self.blueBox).size(200).overlay {
           FlexItem($0, view: self.redBox).size(400)
         }
       }
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_nested_centering_overlay_from_small_to_large_rect() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) {
       FlexCenter($0, option: .XY) {
         FlexItem($0, view: self.yellowBox).size(50).overlay {
           FlexCenter($0, option: .XY) {
@@ -86,16 +91,17 @@ final class FlexOverlayTests: KarrotFlexSnapshotTestCase {
         }
       }
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_non_clip_overlay_test() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) {
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) {
       FlexItem($0, view: self.yellowBox).size(200).overlay {
         FlexItem($0, view: self.blueBox).size(200).position(.absolute).left(100).top(100)
       }.nonCilpsToBounds()
     }
-    self.verify()
-  }
 
+    assertSnapshot(matching: testView, as: .image)
+  }
 }

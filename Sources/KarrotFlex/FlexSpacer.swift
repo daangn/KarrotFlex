@@ -1,8 +1,8 @@
 //
 //  FlexSpacer.swift
-//  KarrotFlex
 //
-//  Created by Geektree0101 on 2021/12/12.
+//  Copyright (c) Danggeun Market, Inc.  All rights reserved.
+//  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
 import UIKit
