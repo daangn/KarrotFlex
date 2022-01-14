@@ -66,4 +66,4 @@ let package = Package(
 
 ## License
 
-KarrotFlex is available under the MIT license. See the LICENSE file for more info.
+The KarrotFlex is available for free use, as described by the [LICENSE](https://github.com/daangn/KarrotFlex/blob/master/LICENSE) (Apache 2.0).
