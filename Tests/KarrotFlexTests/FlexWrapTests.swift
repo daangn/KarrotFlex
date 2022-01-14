@@ -1,8 +1,8 @@
 //
 //  FlexWrapTests.swift
 //
-//
-//  Created by Kanghoon Oh on 2022/01/14.
+//  Copyright (c) Danggeun Market, Inc.  All rights reserved.
+//  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
 import Foundation
