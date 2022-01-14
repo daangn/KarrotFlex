@@ -5,7 +5,7 @@
 //  Created by Geektree0101 on 2022/01/10.
 //
 
-import Foundation
+import UIKit
 
 public enum FlexWrapDirection {
   case vertical
