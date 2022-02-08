@@ -1,6 +1,6 @@
 PODS:
   - FlexLayout (1.3.22)
-  - KarrotFlex (1.0.1):
+  - KarrotFlex (1.1.0):
     - FlexLayout (~> 1.3)
     - PinLayout (~> 1.10.0)
   - PinLayout (1.10.0)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FlexLayout: df96321d364c4c5fd38f85caf90b607f7b1b4f48
-  KarrotFlex: dd2a7d614dbda570585d8c3696ef552ea786b112
+  KarrotFlex: f92ad546f833bf4bb2a5d45803ddac6539458541
   PinLayout: e50e9a748b632905fca6e67043ea4b05d6c92186
 
 PODFILE CHECKSUM: 87685cfaeeab3c8233befd8bfa98b5d72f1c8f6d
