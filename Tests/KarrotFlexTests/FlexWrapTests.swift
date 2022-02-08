@@ -1,17 +1,18 @@
 //
 //  FlexWrapTests.swift
-//  KarrotFlex_Tests
 //
-//  Created by Geektree0101 on 2022/01/10.
-//  Copyright © 2022 CocoaPods. All rights reserved.
+//  Copyright (c) Danggeun Market, Inc.  All rights reserved.
+//  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
 import Foundation
 import XCTest
-import KarrotFlex
-import FBSnapshotTestCase
 
-final class FlexWrapTests: KarrotFlexSnapshotTestCase {
+import SnapshotTesting
+
+import KarrotFlex
+
+final class FlexWrapTests: XCTestCase {
 
   private let buttons: [UIButton] = [
     "apple",
@@ -48,25 +49,28 @@ final class FlexWrapTests: KarrotFlexSnapshotTestCase {
 
   override func setUp() {
     super.setUp()
-    self.recordMode = false
+
+    isRecording = false
   }
 
   func test_vertical_wrap() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) { flex in
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) { flex in
       FlexWrap(flex, direction: .vertical, children: self.buttons)
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_horizontal_wrap() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) { flex in
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) { flex in
       FlexWrap(flex, direction: .horizontal, children: self.buttons)
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_wrap_vertical_child_define() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) { flex in
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) { flex in
       FlexWrap(
         flex,
         direction: .vertical,
@@ -76,11 +80,12 @@ final class FlexWrapTests: KarrotFlexSnapshotTestCase {
         }
       )
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 
   func test_wrap_horizontal_child_define() {
-    self.testDefine(parentSize: CGSize(width: 500, height: 500)) { flex in
+    let testView = KarrotFlexTestView(parentSize: CGSize(width: 500, height: 500)) { flex in
       FlexWrap(
         flex,
         direction: .horizontal,
@@ -90,6 +95,7 @@ final class FlexWrapTests: KarrotFlexSnapshotTestCase {
         }
       )
     }
-    self.verify()
+
+    assertSnapshot(matching: testView, as: .image)
   }
 }
