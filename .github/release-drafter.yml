@@ -1,0 +1,48 @@
+name-template: '🚀 $RESOLVED_VERSION'
+tag-template: '$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels: 
+      - 'enhancement'
+      - 'feat'
+    
+  - title: '🐛 Bug Fixes'
+    labels: 
+      - 'bug'
+      - 'fix'
+
+  - title: '🚀 Performance Improvements'
+    label: 'perf'
+
+  - title: '📚 Documentation'
+    labels: 
+      - 'documentation'
+      - 'docs'
+
+  - title: '🧰 Maintenance'
+    labels: 
+      - 'chore'
+      - 'ci'
+      - 'build'
+      - 'test'
+
+  - title: '🗑 Reverts'
+    label: 'revert'
+
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## What’s Changed
+
+  $CHANGES
