@@ -29,8 +29,8 @@ jobs:
     - name: Deploy to Cocoapods
       run: |
         set -eo pipefail
-        export LIB_VERSION=${{ steps.extract_version_name.outputs.version }}
         pod lib lint --allow-warnings
         pod trunk push --allow-warnings
       env:
+        LIB_VERSION: ${{ steps.extract_version_name.outputs.version }}
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
