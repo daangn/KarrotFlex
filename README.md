@@ -58,6 +58,11 @@ let package = Package(
 )
 ```
 
+In your Xcode target:
+
+Add `FLEXLAYOUT_SWIFT_PACKAGE=1` to the build setting.  
+(TARGET -> Build Settings -> Apple Clang - Preprocessing -> Preprocessor Macros)
+
 ## Author
 
 - [Geektree0101](https://github.com/Geektree0101), david@daangn.com
